@@ -7,16 +7,7 @@
   "ignorePaths": ["cloudbuild/**", ".devcontainer/**", "docker-compose.yaml", "Dockerfile"],
   "packageRules": [
     {
-      "matchDepTypes": [
-        "action",
-        "build-system.requires",
-        "dependencies",
-        "dev",
-        "dev-dependencies",
-        "docs",
-        "extras",
-        "test"
-      ],
+      "matchPackagePatterns": [".+"],
       "semanticCommitType": "build({{#if (containsString packageFileDir 'packages')}}{{{replace '.*[\/]([^/\\s]+$)' '$1' packageFileDir}}}{{else}}monorepo{{/if}})"
     },
     {
