@@ -5,12 +5,8 @@
     "python": "==3.11"
   },
   "ignorePaths": ["cloudbuild/**", ".devcontainer/**", "docker-compose.yaml", "Dockerfile"],
+  "semanticCommitType": "build({{#if (containsString packageFileDir 'packages')}}{{{replace '.*[\/]([^/]+$)' '$1' packageFileDir}}}{{else}}monorepo{{/if}})",
   "packageRules": [
-    {
-      "matchFileNames": ["**/*"],
-      "semanticCommitScope": "{{ depType }}",
-      "semanticCommitType": "build({{#if (containsString packageFileDir 'packages')}}{{{replace '.*[\/]([^/]+$)' '$1' packageFileDir}}}{{else}}monorepo{{/if}})"
-    },
     {
       "matchPackagePatterns": ["python"],
       "enabled": false
