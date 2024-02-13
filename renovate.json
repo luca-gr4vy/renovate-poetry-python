@@ -8,7 +8,7 @@
   "packageRules": [
     {
       "matchFileNames": ["**/*"],
-      "semanticCommitType": "build({{#if (containsString packageFileDir 'packages')}}{{{replace '.*[\/]([^/]+$)' 'asdasd' packageFileDir}}}{{else}}monorepo{{/if}})"
+      "semanticCommitType": "build({{#if (containsString packageFileDir 'packages')}}{{{replace '.*[\/]([^/]+$)' '$1' packageFileDir}}}{{else}}monorepo{{/if}})"
     },
     {
       "matchPackagePatterns": ["python"],
