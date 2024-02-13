@@ -9,7 +9,7 @@
     {
       "matchFileNames": ["**/*"],
       "semanticCommitScope": "{{ depType }}",
-      "semanticCommitType": "build({{#if (containsString packageFileDir 'packages')}}{{{replace '.*[\/]([^/]+$)' '$1' packageFileDir}}{{else}}monorepo{{/if}})"
+      "semanticCommitType": "build({{#if (containsString packageFileDir 'packages')}}{{{replace '.*[\/]([^/]+$)' '$1' packageFileDir}}}{{else}}monorepo{{/if}})"
     }
   ]
 }
