@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>gr4vy/renovate-config:python"],
+  "extends": ["github>gr4vy/renovate-config:python", ":semanticCommitScopeDisabled"],
   "constraints": {
     "python": "==3.11"
   },
