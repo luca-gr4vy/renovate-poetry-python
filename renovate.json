@@ -8,7 +8,7 @@
   "packageRules": [
     {
       "matchPackagePatterns": [".+"],
-      "semanticCommitType": "build({{#if (containsString packageFileDir 'packages')}}{{{replace '.*[\/]([^/\\s]+$)' '$1' packageFileDir}}}{{else}}monorepo{{/if}})"
+      "semanticCommitType": "build({{#if (containsString packageFileDir 'packages')}}{{{replace 'packages\/([^/]+).*' '$1' packageFileDir}}}{{else}}monorepo{{/if}})"
     },
     {
       "matchDepTypes": ["dev"],
