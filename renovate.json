@@ -18,6 +18,10 @@
     {
       "matchPackagePatterns": ["^flask"],
       "groupName": "Flask"
+    },
+    {
+      "matchPackagePatterns": ["^opentelemetry-"],
+      "groupName": "opentelemetry"
     }
   ]
 }
