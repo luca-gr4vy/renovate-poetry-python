@@ -8,7 +8,7 @@ packages = [{include = "flaskr"}]
 [tool.poetry.dependencies]
 python = "3.11.x"
 Flask = "2.2.3"
-Flask-APScheduler = "1.12.4"
+Flask-APScheduler = "1.13.1"
 Flask-Cors = "3.0.10"
 confluent-kafka = "2.0.2"
 flask-sock = "0.6.0"
