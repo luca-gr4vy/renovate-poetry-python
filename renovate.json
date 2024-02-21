@@ -13,8 +13,11 @@
     },
     {
       "matchDepTypes": ["dev"],
-      "groupName": "dev-deps",
-      "automerge": false
+      "groupName": "dev-deps"
+    },
+    {
+      "matchPackagePatterns": ["^flask"],
+      "groupName": "Flask"
     }
   ]
 }
