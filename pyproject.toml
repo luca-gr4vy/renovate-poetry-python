@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "renovate-poetry-python-monorepo"
+version = "0.0.1"
+description = ""
+authors = ["Luca Allievi <luca@gr4vy.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.x"
