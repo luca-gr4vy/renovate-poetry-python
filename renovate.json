@@ -13,7 +13,7 @@
     {
       "matchDepTypes": ["dev"],
       "groupName": "dev-deps",
-      "automerge": true
+      "automerge": false
     }
   ]
 }
