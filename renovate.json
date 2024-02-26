@@ -12,6 +12,10 @@
       "semanticCommitType": "build({{#if (containsString packageFileDir 'packages')}}{{{replace 'packages\/([^/]+).*' '$1' packageFileDir}}}{{else}}monorepo{{/if}})"
     },
     {
+      "matchUpdateTypes": ["major"],
+      "enabled": true
+    },
+    {
       "matchDepTypes": ["dev"],
       "groupName": "dev-deps"
     },
