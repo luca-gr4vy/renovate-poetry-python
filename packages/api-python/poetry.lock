@@ -735,6 +735,7 @@ files = [
 
 [package.dependencies]
 coverage = {version = ">=5.2.1", extras = ["toml"]}
+pylint = ">=2.15.0"
 pytest = ">=4.6"
 
 [package.extras]
