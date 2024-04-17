@@ -25,13 +25,10 @@
       "groupName": "Flask"
     },
     {
-      "matchPackagePatterns": ["^opentelemetry-"],
-      "groupName": "opentelemetry"
-    },
-    {
       "matchDatasources": ["pypi"],
-      "matchPackageNames": ["opentelemetry-instrumentation-requests"],
-      "versioning": "poetry",
+      "matchPackagePatterns": ["^opentelemetry-"],
+      "groupName": "opentelemetry",
+      "versioning": "loose",
       "ignoreUnstable": false
     }
   ]
