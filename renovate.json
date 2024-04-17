@@ -17,6 +17,7 @@
     },
     {
       "matchDepTypes": ["dev"],
+      "matchUpdateTypes": ["patch", "minor"],
       "groupName": "dev-deps"
     },
     {
@@ -25,7 +26,11 @@
     },
     {
       "matchPackagePatterns": ["^opentelemetry-"],
-      "groupName": "opentelemetry",
+      "groupName": "opentelemetry"
+    },
+    {
+      "matchDatasources": ["pypi"],
+      "matchPackageNames": ["opentelemetry-instrumentation-requests"],
       "versioning": "poetry"
     }
   ]
