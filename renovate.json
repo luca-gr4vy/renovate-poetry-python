@@ -31,7 +31,8 @@
     {
       "matchDatasources": ["pypi"],
       "matchPackageNames": ["opentelemetry-instrumentation-requests"],
-      "versioning": "poetry"
+      "versioning": "poetry",
+      "ignoreUnstable": false
     }
   ]
 }
