@@ -18,6 +18,7 @@ sentry-sdk = {version = "1.15.0", extras = ["flask"]}
 opentelemetry-api = "^1.18.0"
 opentelemetry-sdk = "^1.18.0"
 opentelemetry-exporter-otlp-proto-grpc = "^1.18.0"
+opentelemetry-instrumentation-requests = "^0.43b0"
 
 [tool.poetry.group.dev.dependencies]
 poethepoet = "0.18.1"
