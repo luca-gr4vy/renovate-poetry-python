@@ -6,6 +6,7 @@
     "python": "==3.11"
   },
   "ignorePaths": ["cloudbuild/**", ".devcontainer/**", "docker-compose.yaml", "Dockerfile"],
+  "ignoreUnstable": false,
   "packageRules": [
     {
       "matchPackagePatterns": [".+"],
@@ -25,11 +26,8 @@
       "groupName": "Flask"
     },
     {
-      "matchDatasources": ["pypi"],
       "matchPackagePatterns": ["^opentelemetry-"],
-      "groupName": "opentelemetry",
-      "versioning": "python",
-      "ignoreUnstable": false
+      "groupName": "opentelemetry"
     }
   ]
 }
