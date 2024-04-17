@@ -25,7 +25,8 @@
     },
     {
       "matchPackagePatterns": ["^opentelemetry-"],
-      "groupName": "opentelemetry"
+      "groupName": "opentelemetry",
+      "versioning": "poetry"
     }
   ]
 }
