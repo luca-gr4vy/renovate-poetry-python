@@ -28,7 +28,7 @@
       "matchDatasources": ["pypi"],
       "matchPackagePatterns": ["^opentelemetry-"],
       "groupName": "opentelemetry",
-      "versioning": "loose",
+      "versioning": "python",
       "ignoreUnstable": false
     }
   ]
