@@ -9,12 +9,15 @@
   "ignoreUnstable": false,
   "packageRules": [
     {
-      "matchPackagePatterns": [".+"],
+      "matchPackageNames": ["*"],
       "semanticCommitType": "build({{#if (containsString packageFileDir 'packages')}}{{{replace 'packages\/([^/]+).*' '$1' packageFileDir}}}{{else}}monorepo{{/if}})"
     },
     {
+      "description": "Majors: listed on the Dependency Dashboard, PR only after ticking the box",
       "matchUpdateTypes": ["major"],
-      "enabled": true
+      "enabled": true,
+      "dependencyDashboardApproval": true,
+      "addLabels": ["major"]
     },
     {
       "matchDepTypes": ["dev"],
@@ -22,11 +25,11 @@
       "groupName": "dev-deps"
     },
     {
-      "matchPackagePatterns": ["^flask"],
+      "matchPackageNames": ["/^flask/"],
       "groupName": "Flask"
     },
     {
-      "matchPackagePatterns": ["^opentelemetry-"],
+      "matchPackageNames": ["/^opentelemetry-/"],
       "groupName": "opentelemetry"
     }
   ]
